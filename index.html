@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Produce and Grocer</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  
+  <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+
+  <!-- Header section starts -->
+  <header>
+    <div class="logo-container">
+      <i class="fa-solid fa-bag-shopping"></i> 
+      <h3>Fresh</h3>
+    </div>
+    
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#meat">meat & dairy</a>
+      <a href="#produce">produce</a>
+      <a href="#grain">grain</a>
+      <a href="#contact">contact</a>
+    </nav>
+    
+    <div class="icon-container">
+      <i class="fa-solid fa-bars" id="menu-btn"></i>
+      <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+      <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
+      <i class="fa-solid fa-user" id="login-btn"></i>
+    </div>
+
+    <div class="search-box">
+      <input type="text">
+      <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+
+    <div class="shopping-cart">
+      <div class="title">
+        <h3>my cart</h3>
+      </div>
+      <div class="box-container">
+        <div class="box">         
+          <i class="fa-solid fa-xmark"></i>
+          <img src="/images/meat-image-1.jpg" alt="">
+          <div class="content">
+            <h3>beef - fillet</h3>
+            <span class="price">$8.99/lb</span>
+            <span class="multiple">x</span>
+            <span class="quantity">2</span>
+          </div> 
+        </div>
+        <div class="box">         
+          <i class="fa-solid fa-xmark"></i>
+          <img src="/images/grains-image-2.jpg" alt="">
+          <div class="content">
+            <h3>white rice</h3>
+            <span class="price">$2.99/lb</span>
+            <span class="multiple">x</span>
+            <span class="quantity">3</span>
+          </div> 
+        </div>
+        <div class="box">         
+          <i class="fa-solid fa-xmark"></i>
+          <img src="/images/produce-image-1.jpg" alt="">
+          <div class="content">
+            <h3>broccoli</h3>
+            <span class="price">$1.99/lb</span>
+            <span class="multiple">x</span>
+            <span class="quantity">1</span>
+          </div> 
+        </div>
+      </div>
+      <h3 class="total">total: <span>$28.94</span></h3>
+      <a href="#" class="btn">checkout</a>
+    </div>
+
+    <div class="login">
+      <h3 class="title">login</h3>
+      <div class="input-container">
+        <input class="credentials" type="email" placeholder="enter your email">
+        <input class="credentials" type="text" placeholder="enter your password">
+        <div class="sub-input">
+          <div class="remember">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">remember me</label>
+          </div>
+          <div class="forgot">
+            <span><a href="#">forgot password ?</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <a href="#" class="btn">submit</a>
+        <p><a href="#">sign up</a></p>
+      </div>
+    </div>
+    
+  </header>
+  <!-- Header section ends -->
+
+  <!-- Home section starts -->
+  <section class="home" id="home">
+
+    <div class="section-title">
+      <h3>home</h3>
+    </div>
+
+    <div class="content-container">
+      <div class="box" id="box1">
+        <h3>a fresh start</h3>
+        <img src="/images/home-image-1.jpg" alt="">
+        <div class="content" id="content-one">
+          <i class="fa-solid fa-angles-down" id="arrow-one"></i>
+          <p>
+            Here at Fresh Co-op, we believe in a less-is-more approach to farming. 
+            Without the use of chemicals, hormones, or anti-biotics, our members 
+            produce the most nutritious, environmentally friendly food you can buy.
+          </p>
+        </div>
+      </div>
+      <div class="box" id="box2">
+        <h3>what is a co-op ?</h3>
+        <img src="/images/home-image-2.jpg" alt="">
+        <div class="content" id="content-two">
+          <i class="fa-solid fa-angles-down" id="arrow-two"></i>
+          <p>
+            A Co-op is a member-owned and operated company that is run exclusively for the 
+            benefit of its members. All revenue is put back into our operation, and all profit 
+            is used to reduce the cost of food in our stores.
+          </p>
+        </div>
+      </div>
+      <div class="box" id="box3">
+        <h3>become a member</h3>
+        <img src="/images/home-image-3.jpg" alt="">
+        <div class="content" id="content-three">
+          <i class="fa-solid fa-angles-down" id="arrow-three"></i>
+          <p>
+            From store clerk to farm hand, there are so 
+            many ways to contribute. Of course, if you're just looking for a great place to buy
+            quality groceries, that's cool too !
+          </p>
+          <a href="#" class="btn">membership info</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Home section ends -->
+
+  <!-- Meat and dairy section starts --> 
+  <section class="meat" id="meat">
+
+    <div class="section-title">
+      <h3>meat & dairy</h3>
+    </div>
+
+    <div class="swiper-container">
+
+      <div class="swiper md-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="/images/meat-image-1.jpg" alt="">
+            <h3>beef</h3>
+            <div class="content">
+              <a href="#">fillet</a>
+              <a href="#">ribeye</a>
+              <a href="#">chuck</a>
+              <a href="#">brisket</a>
+              <a href="#">skirt</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+  
+          <div class="swiper-slide slide">
+            <img src="/images/meat-image-2.jpg" alt="">
+            <h3>chicken</h3>
+            <div class="content">
+              <a href="#">breast</a>
+              <a href="#">thigh</a>
+              <a href="#">drumsticks</a>
+              <a href="#">wings</a>
+              <a href="#">whole</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+  
+          <div class="swiper-slide slide">
+            <img src="/images/meat-image-3.jpg" alt="">
+            <h3>pork</h3>
+            <div class="content">
+              <a href="#">chops</a>
+              <a href="#">tenderloin</a>
+              <a href="#">bacon</a>
+              <a href="#">sausage</a>
+              <a href="#">ground</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+  
+          <div class="swiper-slide slide">
+            <img src="/images/meat-image-4.jpg" alt="">
+            <h3>cheese</h3>
+            <div class="content">
+              <a href="#">cheddar</a>
+              <a href="#">swiss</a>
+              <a href="#">provolone</a>
+              <a href="#">blue</a>
+              <a href="#">feta</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+  
+          <div class="swiper-slide slide">
+            <img src="/images/meat-image-5.jpg" alt="">
+            <h3>milk</h3>
+            <div class="content">
+              <a href="#">whole</a>
+              <a href="#">raw</a>
+              <a href="#">butter</a>
+              <a href="#">yogurt</a>
+              <a href="#">kefir</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="btn-container">
+      <a href="#" class="btn" id="view-btn">view all</a>
+    </div>
+  </section> 
+  <!-- Meat and dairy section ends -->
+
+  <!-- Produce section starts --> 
+  <section class="produce" id="produce">
+
+    <div class="section-title">
+      <h3>produce</h3>
+    </div>
+
+    <div class="swiper-container">
+
+      <div class="swiper md-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="/images/produce-image-1.jpg" alt="">
+            <h3>cruciferous</h3>
+            <div class="content">
+              <a href="#">broccoli</a>
+              <a href="#">kale</a>
+              <a href="#">brussels sprouts</a>
+              <a href="#">cabbage</a>
+              <a href="#">radishes</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+  
+          <div class="swiper-slide slide">
+            <img src="/images/produce-image-2.jpg" alt="">
+            <h3>leafy greens</h3>
+            <div class="content">
+              <a href="#">lettuce</a>
+              <a href="#">spinach</a>
+              <a href="#">arugula</a>
+              <a href="#">sorrel</a>
+              <a href="#">bok choy</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+  
+          <div class="swiper-slide slide">
+            <img src="/images/produce-image-3.jpg" alt="">
+            <h3>root vegetables</h3>
+            <div class="content">
+              <a href="#">carrots</a>
+              <a href="#">potatoes</a>
+              <a href="#">sweet potatoes</a>
+              <a href="#">beets</a>
+              <a href="#">parsnips</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+  
+          <div class="swiper-slide slide">
+            <img src="/images/produce-image-4.jpg" alt="">
+            <h3>mushrooms</h3>
+            <div class="content">
+              <a href="#">portabello</a>
+              <a href="#">white button</a>
+              <a href="#">shiitake</a>
+              <a href="#">oyster</a>
+              <a href="#">morel</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+  
+          <div class="swiper-slide slide">
+            <img src="/images/produce-image-5.jpg" alt="">
+            <h3>fruits</h3>
+            <div class="content">
+              <a href="#">apples</a>
+              <a href="#">bananas</a>
+              <a href="#">pears</a>
+              <a href="#">blueberries</a>
+              <a href="#">strawberries</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+  
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="btn-container">
+      <a href="#" class="btn" id="view-btn">view all</a>
+    </div>
+  </section> 
+  <!-- Produce section ends -->
+
+  <!-- Grains section starts --> 
+  <section class="grain" id="grain">
+
+    <div class="section-title">
+      <h3>grains</h3>
+    </div>
+
+    <div class="swiper-container">
+
+      <div class="swiper md-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="/images/grains-image-1.jpg" alt="">
+            <h3>wheat</h3>
+            <div class="content">
+              <a href="#">whole wheat flour</a>
+              <a href="#">bread flour</a>
+              <a href="#">pastry flour</a>
+              <a href="#">enriched flour</a>
+              <a href="#">fresh bread</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+  
+          <div class="swiper-slide slide">
+            <img src="/images/grains-image-2.jpg" alt="">
+            <h3>rye</h3>
+            <div class="content">
+              <a href="#">white rye flour</a>
+              <a href="#">dark rye flour</a>
+              <a href="#">pumpernickel flour </a>
+              <a href="#">fresh bread</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+  
+          <div class="swiper-slide slide">
+            <img src="/images/grains-image-3.jpg" alt="">
+            <h3>oats</h3>
+            <div class="content">
+              <a href="#">groats</a>
+              <a href="#">steel cut</a>
+              <a href="#">rolled</a>
+              <a href="#">oat flour</a>
+              <a href="#">oat bran</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+  
+          <div class="swiper-slide slide">
+            <img src="/images/grains-image-4.jpg" alt="">
+            <h3>rice</h3>
+            <div class="content">
+              <a href="#">white</a>
+              <a href="#">brown</a>
+              <a href="#">wild</a>
+              <a href="#">jasmine</a>
+              <a href="#">basmati</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+  
+          <div class="swiper-slide slide">
+            <img src="/images/grains-image-5.jpg" alt="">
+            <h3>quinoa</h3>
+            <div class="content">
+              <a href="#">white</a>
+              <a href="#">red</a>
+              <a href="#">black</a>
+              <a href="#">tri-color</a>
+              <a href="#">flour</a>
+              <a href="#" class="btn">view all</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="btn-container">
+      <a href="#" class="btn" id="view-btn">view all</a>
+    </div>
+  </section> 
+  <!-- Grains section ends -->
+
+  <!-- Contact section starts -->
+    <section class="contact" id="contact">
+      <!-- <div class="section-title">
+        <h3>get in touch</h3>
+      </div> -->
+
+      <div class="content">
+        <form action="">
+          <h3 class="form-title">get in touch !</h3>
+          <div class="input-container">
+            <label for="name">name</label>
+            <input type="text" id="name">
+          </div>
+          <div class="input-container">
+            <label for="email">email</label>
+            <input type="text" id="email">
+          </div>
+          <div class="input-container">
+            <label for="number">number</label>
+            <input type="number" id="number">
+          </div>
+          <div class="input-container">
+            <label for="message">message</label>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="enter your message here ..."></textarea>
+          </div>
+          <div class="social-container">
+            <h3>find us on social media:</h3>
+            <a href="#"><i class="fa-brands fa-facebook-f" id="fb"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" id="inst"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter" id="tw"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in" id="ln"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p" id="pin"></i></a>
+          </div>
+        </form>
+      </div>
+    </section>
+  <!-- Contact section ends -->
+
+  <!-- Footer starts -->
+    <div class="footer">
+      <h3>created by <span>robby moore</span> | all rights reserved</h3>
+    </div>
+  <!-- Footer ends -->
+
+
+
+
+  <!-- Swiper -->
+  <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- JS -->
+  <script src="/js/script.js"></script>
+
+</body>
+</html>
